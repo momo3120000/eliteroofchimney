@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Free Roof Estimate | Elite Roofing</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+
+background:#f5f5f5;
+
+}
+
+.container{
+
+max-width:900px;
+margin:40px auto;
+background:#fff;
+padding:30px;
+border-radius:12px;
+box-shadow:0 10px 30px rgba(0,0,0,.15);
+
+}
+
+h1{
+
+text-align:center;
+margin-bottom:10px;
+
+}
+
+p{
+
+text-align:center;
+color:#666;
+margin-bottom:30px;
+
+}
+
+.form-group{
+
+margin-bottom:20px;
+
+}
+
+label{
+
+display:block;
+margin-bottom:8px;
+font-weight:bold;
+
+}
+
+select,
+input,
+textarea{
+
+width:100%;
+padding:14px;
+border:1px solid #ddd;
+border-radius:8px;
+font-size:16px;
+
+}
+
+button{
+
+width:100%;
+padding:16px;
+background:#d4af37;
+border:none;
+border-radius:8px;
+font-size:18px;
+font-weight:bold;
+cursor:pointer;
+transition:.3s;
+
+}
+
+button:hover{
+
+opacity:.9;
+
+}
+
+#serviceOptions{
+
+margin-top:20px;
+
+}
+
+#result{
+
+display:none;
+margin-top:30px;
+background:#f7f7f7;
+padding:25px;
+border-radius:10px;
+text-align:center;
+
+}
+
+#price{
+
+font-size:36px;
+font-weight:bold;
+color:green;
+margin:15px 0;
+
+}
+
+.note{
+
+color:#666;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Free Roof Estimate</h1>
+
+<p>Get an instant estimated quote in less than 1 minute.</p>
+
+<div class="form-group">
+
+<label>Select Service</label>
+
+<select id="service">
+
+<option value="">Choose Service</option>
+
+<option value="minor">
+Minor Roof Repair
+</option>
+
+<option value="repair">
+Roof Repair
+</option>
+
+<option value="newroof">
+New Roof Installation
+</option>
+
+
+
+<option value="chimney">
+Chimney Services
+</option>
+
+<option value="gutter">
+Gutter Services
+</option>
+
+<option value="fascia">
+Fascia & Soffits
+</option>
+
+</select>
+
+</div>
+
+<div id="serviceOptions"></div>
+<input type="hidden" name="_subject" value="New Estimate Request">
+
+<input type="hidden" name="_captcha" value="false">
+
+<input type="hidden" name="_template" value="table">
+
+
+<form id="customerForm"
+      action="https://formsubmit.co/eliteroofingandchimney@gmail.com"
+      method="POST"
+      enctype="multipart/form-data">
+      <input type="hidden" id="selectedService" name="Service">
+
+<input type="hidden" id="estimatedPrice" name="Estimated Price">
+<input type="hidden" id="roofTypeHidden" name="Roof Type">
+<input type="hidden" id="roofSizeHidden" name="Roof Size">
+<input type="hidden" id="propertyHeightHidden" name="Property Height">
+    <div class="form-group">
+        <label>Full Name</label>
+        <input type="text" id="customerName" name="Full Name" required>
+    </div>
+
+    <div class="form-group">
+        <label>Phone Number</label>
+        <input type="tel" id="customerPhone" name="Phone Number" required>
+    </div>
+
+    <div class="form-group">
+        <label>Email Address</label>
+        <input type="email" id="customerEmail" name="Email Address" required>
+    </div>
+
+    <div class="form-group">
+        <label>Property Address</label>
+        <input type="text" id="customerAddress" name="Property Address" required>
+    </div>
+
+  
+</div>
+
+<div id="result">
+
+<h2>Estimated Price</h2>
+
+<div id="price">€0</div>
+<button id="quoteBtn" type="submit">
+    Request Free Inspection
+</button>
+<div class="note">
+
+Final quotation will be confirmed after a free inspection.
+
+</div>
+
+</div>
+
+</div>
+
+
+</div> <!-- result -->
+
+</form>
+
+</div> <!-- container -->
+
+<script src="estimate.js"></script>
+</body>
+</html>
