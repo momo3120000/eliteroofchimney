@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 const revealItems = document.querySelectorAll('.reveal');
 const counters = document.querySelectorAll('.counter');
 const menuToggle = document.querySelector('.menu-toggle');
@@ -101,7 +101,7 @@ window.addEventListener('scroll', () => {
   });
 });
 
-=======
+
 const revealItems = document.querySelectorAll('.reveal');
 const counters = document.querySelectorAll('.counter');
 const menuToggle = document.querySelector('.menu-toggle');
@@ -204,4 +204,3 @@ window.addEventListener('scroll', () => {
   });
 });
 
->>>>>>> 764cd0cca4d91b46dc897ece6fadb113bf4491f9
