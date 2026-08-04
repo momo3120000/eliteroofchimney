@@ -147,7 +147,16 @@ img {
   color: var(--white);
   border: 1px solid rgba(255, 255, 255, 0.25);
 }
+.btn-outline {
+  background: #f4b400;
+  color: #ffffff;
+  border: 1px solid #f4b400;
+}
 
+.btn-outline:hover {
+  background: #d99a00;
+  color: #ffffff;
+}
 .hero {
   min-height: 92vh;
   position: relative;
