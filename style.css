@@ -734,3 +734,28 @@ img {
 }
 
 }
+@media (max-width: 768px) {
+  .site-header {
+    background: #fff;
+  }
+
+  .logo {
+    color: #111827 !important;
+  }
+
+  .logo span {
+    color: #f4b400 !important;
+  }
+
+  .menu-toggle span {
+    background: #111827 !important;
+  }
+
+  .nav-links {
+    background: #fff;
+  }
+
+  .nav-links a {
+    color: #111827 !important;
+  }
+}
