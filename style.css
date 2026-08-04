@@ -78,7 +78,7 @@ img {
 }
 
 .logo {
-  color: var(--white);
+  color: #111827;
   font-size: 1.2rem;
   font-weight: 800;
   letter-spacing: 0.02em;
@@ -747,8 +747,8 @@ img {
     color: #f4b400 !important;
   }
 
-  .menu-toggle span {
-    background: #111827 !important;
+ .menu-toggle span {
+  background: #111827;
   }
 
   .nav-links {
