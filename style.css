@@ -720,3 +720,17 @@ img {
 .nav-links a.active{
     color:#f4b400;
 }
+@media (max-width:760px){
+
+.nav-links{
+    background:#ffffff;
+    padding:15px 0;
+}
+
+.nav-links a{
+    color:#1f2937 !important;
+    width:100%;
+    padding:12px 20px;
+}
+
+}
